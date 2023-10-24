@@ -1,0 +1,267 @@
+/************************************* global classes *************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(59, 12, 102);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/************************************* NavBar *************************************/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgba(31, 28, 34, 0.952);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  width: fit-content;
+}
+
+.hover:hover {
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: lavender;
+  font-size: 1.5rem;
+}
+
+/************************************* Image Slider *************************************/
+.box1 {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+
+.imageSlider {
+  width: 100%;
+  height: 100%;
+  background-image: url("image/img1.jpg");
+  background-size: 100% 100%;
+  box-shadow: rgba(31, 28, 34, 0.952) 0px 8px 24px;
+  animation: changeImage 20s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("image/img1.jpg");
+    opacity: 0.8;
+  }
+
+  33% {
+    background-image: url("image/img2.jpg");
+    opacity: 0.8;
+  }
+
+  66% {
+    background-image: url("image/img3.jpg");
+    opacity: 0.8;
+  }
+
+  100% {
+    background-image: url("image/img4.jpg");
+    opacity: 0.8;
+  }
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+   text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 95px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/************************************* Product *************************************/
+.product {
+  display: flex;
+  background-color: rgba(31, 28, 34, 0.952);
+  padding: 25px;
+  width: auto;
+  height: 320px;
+}
+
+.product>div{
+  width: 33%;
+}
+
+.product>div> img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 238px;
+  width: auto;
+}
+
+
+.product>div>h4>ul>li{
+  list-style-type: none;
+}
+
+.product > div > h3 {
+  padding:18px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/************************************* About US *************************************/
+.outerDiv {
+  background-color: rgba(31, 28, 34, 0.952);
+  height: 450px;
+  width: 100%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 30px 0px 0px 100px;
+  display: flexbox;
+}
+
+.about {
+  font-size: 40px;
+}
+
+.leftDiv {
+  height: 300px;
+  width: 48%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.rightDiv {
+  height: 325px;
+  width: 38%;
+  margin-top: -25px;
+  box-sizing: border-box;
+  float: right;
+}
+/************************************* footer section *************************************/
+footer {
+  background-color: rgba(34, 30, 39, 0.952);
+}
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+.parent {
+  padding: 5px 5px 5px 100px;
+  display: flexbox;
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(156, 34, 34);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.snap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 16%;
+}
+
+.footer .footer-first {
+  text-align: center;
+}
+
+.footer > div {
+  width: 223px;
+}
+
+footer .text-rights {
+  height: 42px;
+  text-align: center;
+  color: gray;
+  padding: 15px;
+}
